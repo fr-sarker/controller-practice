@@ -48,7 +48,7 @@ func main() {
 
 	// Wait until the cache is synced
 	if !cache.WaitForCacheSync(stopCh, podInformer.Informer().HasSynced) {
-		panic("Timed out waiting for caches to sync")
+		panic("Timed out waiting for caches to sync,,,")
 	}
 
 	<-stopCh
